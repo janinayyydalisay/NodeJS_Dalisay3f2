@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> | About</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        /* Aking Desinyo sa About page ko */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            color: white;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .intro-text {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .intro-text p {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .image-gallery img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background-color: #b9e960;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('partials/header') %>
+
+    <header>
+        <h1>Janine's About Us</h1>
+    </header>
+
+    <main>
+        <% //Mga Litratong naka public images para sa ABOUT %>
+        <section class="image-gallery">
+            <img src="images/Lion.jpg" alt="Game1">
+            <img src="images/About_5.png" alt="Game2">
+            <img src="images/About_M.png" alt="Game3">
+            <img src="images/About_V.png" alt="Game4">
+            <img src="images/About_Team.png" alt="Game5">
+            <img src="images/About_Office.jpg" alt="Game6">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <%= new Date().getFullYear() %> Janine's Game Store. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

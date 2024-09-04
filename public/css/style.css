@@ -1,0 +1,15 @@
+/*Ang Aking Desinyo sa pangkalahatan na Program*/
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background-color: rgb(240, 210, 43);
+}
+
+h1{
+    color: black;
+}
+
+p{
+    font-size: medium;
+    color:rgb(10, 9, 9);
+}

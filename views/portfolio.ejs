@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> | Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: url('/images/portfolio-header.jpg') no-repeat center center/cover;
+            color: white;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .intro-text {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro-text p {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        .portfolio-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .portfolio-item {
+            flex: 1;
+            min-width: 300px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .portfolio-item h2 {
+            font-size: 1.5em;
+            margin: 20px;
+        }
+
+        .portfolio-item p {
+            margin: 0 20px 20px 20px;
+            font-size: 1.1em;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('partials/header') %>
+
+    <header>
+        <h1>Our Portfolio</h1>
+    </header>
+
+    <main>
+        <section class="intro-text">
+        </section>
+        <% //Kemerot Projects %>
+        <section class="portfolio-gallery">
+            <div class="portfolio-item">
+                <h2>Project One</h2>
+                <p>Mabait Ako</p>
+            </div>
+
+            <div class="portfolio-item">
+                <h2>Project Two</h2>
+                <p>Cute ako ngumiti</p>
+            </div>
+
+            <div class="portfolio-item">
+                <h2>Project Three</h2>
+                <p>Stress na po ako</p>
+            </div>
+
+            <div class="portfolio-item">
+                <h2>Project Four</h2>
+                <p>Jusmeyo Marimar</p>
+            </div>
+
+            <div class="portfolio-item">
+                <h2>Project Five</h2>
+                <p>Kenemerot ko nalang</p>
+            </div>
+
+            <div class="portfolio-item">
+                <h2>Project Six</h2>
+                <p>Pasa nyo na po sir kahit pasang awa nalang</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <%= new Date().getFullYear() %> Janine Dalisay. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
